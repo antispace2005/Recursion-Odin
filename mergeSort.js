@@ -5,13 +5,8 @@ function mergeSort(arr) {
   if (arr.length == 1) {
     return arr;
   }
-  if (arr.length == 2) {
-    if (arr[1] < arr[0]) {
-      return [arr[1], arr[0]];
-    }
-    return arr;
-  }
-  if (arr.length > 2) {
+
+  if (arr.length > 1) {
     let output = [];
 
     const middleIndex = Math.ceil(arr.length / 2);
